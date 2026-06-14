@@ -1,7 +1,6 @@
-# 🚀 Event Processing Engine (C++)
+#  Event Processing Engine (C++)
 
 A multithreaded **Event Processing Engine** built in **C++17** that demonstrates the core concepts of:
-
 - Event-Driven Architecture
 - Producer-Consumer Pattern
 - Thread Synchronization
@@ -9,30 +8,22 @@ A multithreaded **Event Processing Engine** built in **C++17** that demonstrates
 - Observer Design Pattern
 
 The system allows producers to publish events into a **thread-safe blocking queue**, while subscribed consumers process those events asynchronously.
+---
+
+##  Features
+ Thread-safe Blocking Queue using mutex and conditional_variable
+
+ Producer-Consumer Architecture
+ Event-Driven Design
+ Observer Pattern for event subscription
+ Runtime Polymorphism using interfaces
+ Asynchronous event processing using threads
+ FIFO event processing
+ Extensible consumer framework
 
 ---
 
-## 📌 Features
-
-✅ Thread-safe Blocking Queue using `std::mutex` and `std::condition_variable`
-
-✅ Producer-Consumer Architecture
-
-✅ Event-Driven Design
-
-✅ Observer Pattern for event subscription
-
-✅ Runtime Polymorphism using interfaces
-
-✅ Asynchronous event processing using `std::thread`
-
-✅ FIFO event processing
-
-✅ Extensible consumer framework
-
----
-
-## 🏗️ High-Level Architecture
+##  High-Level Architecture
 
 ```text
                 +-----------+
@@ -60,7 +51,7 @@ The system allows producers to publish events into a **thread-safe blocking queu
 
 ---
 
-## 🔄 Event Flow
+##  Event Flow
 
 ```text
 OrderCreated Event
@@ -82,12 +73,10 @@ OrderCreated Event
 
 ---
 
-## 🧩 Components
+## Components
 
 ### Event
-
 Represents a business event containing:
-
 - Event ID
 - Event Type
 - Payload
@@ -148,7 +137,7 @@ Adding a new consumer requires **no changes** to the Event Processor.
 
 ---
 
-## 🎯 Design Patterns Used
+##  Design Patterns Used
 
 | Pattern | Purpose |
 |----------|----------|
@@ -159,7 +148,7 @@ Adding a new consumer requires **no changes** to the Event Processor.
 
 ---
 
-## 🧠 Concepts Demonstrated
+## Concepts Demonstrated
 
 - C++ Templates
 - OOP Principles
@@ -174,7 +163,7 @@ Adding a new consumer requires **no changes** to the Event Processor.
 
 ---
 
-## ⚙️ Technologies
+## Technologies
 
 - C++17
 - STL
@@ -198,7 +187,7 @@ This project was built to gain hands-on experience with:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Topic-based subscriptions
 - Thread Pool
@@ -212,7 +201,7 @@ This project was built to gain hands-on experience with:
 
 ---
 
-## 💡 Inspiration
+## Inspiration
 
 This project is inspired by real-world event processing systems such as:
 
@@ -224,9 +213,3 @@ This project is inspired by real-world event processing systems such as:
 while keeping the implementation lightweight and focused on core C++ concepts.
 
 ---
-
-## 👨‍💻 Author
-
-**Abhishek Kumar Prajapati**
-
-Built as a learning project to explore multithreading, synchronization primitives, event-driven architecture, and low-level system design in C++.
